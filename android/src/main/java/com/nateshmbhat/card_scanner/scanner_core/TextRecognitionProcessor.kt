@@ -62,7 +62,7 @@ class TextRecognitionProcessor(private val scanOptions: CardScanOptions, private
   override fun analyze(imageProxy: ImageProxy) {
     val mediaImage = imageProxy.image
     if (mediaImage != null) {
-      val image = InputImage.fromMediaImage(mediaImage, 90)
+      val image = InputImage.fromMediaImage(mediaImage, 100)
 
       val recognizer = TextRecognition.getClient()
 
